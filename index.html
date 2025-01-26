@@ -3,12 +3,115 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Hariksh Mahendra Suryawanashi | Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f9;
+        }
+
+        header {
+            background-color: #4CAF50;
+            color: white;
+            padding: 20px 10px;
+            text-align: center;
+        }
+
+        nav {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #4CAF50;
+            font-weight: bold;
+        }
+
+        nav a:hover {
+            text-decoration: underline;
+        }
+
+        .section {
+            margin: 20px;
+            padding: 20px;
+            background: white;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            border-radius: 8px;
+        }
+
+        footer {
+            background-color: #333;
+            color: white;
+            text-align: center;
+            padding: 10px;
+            margin-top: 20px;
+        }
+
+        .btn {
+            display: inline-block;
+            margin-top: 10px;
+            padding: 10px 15px;
+            color: white;
+            background-color: #4CAF50;
+            text-decoration: none;
+            border-radius: 5px;
+        }
+
+        .btn:hover {
+            background-color: #45a049;
+        }
+    </style>
 </head>
 <body>
-    <h1>My personal portfolio</h1>
-    <h2>Hariksh Mahendra suryawanshi</h2>
-    <p>Newton school of technology</p>
-    
+    <header>
+        <h1>Hariksh Mahendra Suryawanashi</h1>
+        <p>B.Tech in Computer Science | Aspiring Developer</p>
+    </header>
+
+    <nav>
+        <a href="#about">About Me</a>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div id="about" class="section">
+        <h2>About Me</h2>
+        <p>Hi! I'm Hariksh, a B.Tech student in Computer Science at Newton School of Technology. I'm passionate about solving coding problems, watching cricket, and creating impactful software solutions.</p>
+    </div>
+
+    <div id="projects" class="section">
+        <h2>Projects</h2>
+        <ul>
+            <li>Scratch Game: A sports adventure game to engage users.</li>
+            <li>EnvCamp Website: Figma design for an environmental campaign platform.</li>
+            <li>Exam Prep Website: A 6-page platform offering tips for students.</li>
+        </ul>
+    </div>
+
+    <div id="skills" class="section">
+        <h2>Skills</h2>
+        <ul>
+            <li>Programming: Python, JavaScript</li>
+            <li>Web Development: HTML, CSS, Node.js</li>
+            <li>Tools: Figma, Git</li>
+        </ul>
+    </div>
+
+    <div id="contact" class="section">
+        <h2>Contact</h2>
+        <p>Email: hariksh.suryawanashi@example.com</p>
+        <p>GitHub: <a href="https://github.com/Hariksh" target="_blank">github.com/Hariksh</a></p>
+        <a class="btn" href="mailto:hariksh.suryawanashi@example.com">Email Me</a>
+    </div>
+
+    <footer>
+        <p>&copy; 2025 Hariksh Mahendra Suryawanashi. All rights reserved.</p>
+    </footer>
 </body>
 </html>
