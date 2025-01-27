@@ -6,64 +6,108 @@
     <title>Hariksh Mahendra Suryawanashi | Portfolio</title>
     <style>
         body {
-            font-family: Arial, sans-serif;
+            font-family: 'Arial', sans-serif;
             margin: 0;
             padding: 0;
-            background-color: #f4f4f9;
+            background-color: #f9fafb;
+            color: #333;
         }
 
         header {
-            background-color: #4CAF50;
+            background: linear-gradient(90deg, #3a7bd5, #3a6073);
             color: white;
-            padding: 20px 20px;
+            padding: 30px 20px;
             text-align: center;
+            border-bottom: 5px solid #2a5885;
+        }
+
+        header h1 {
+            font-size: 2.5rem;
+            margin: 0;
+        }
+
+        header p {
+            font-size: 1.2rem;
+            margin-top: 5px;
         }
 
         nav {
             display: flex;
             justify-content: center;
-            gap: 20px;
+            gap: 30px;
             margin: 20px 0;
+            background-color: #2a5885;
+            padding: 10px 0;
+            border-radius: 8px;
         }
 
         nav a {
             text-decoration: none;
-            color: #4CAF50;
+            color: white;
             font-weight: bold;
+            font-size: 1rem;
         }
 
         nav a:hover {
             text-decoration: underline;
+            color: #f9d342;
         }
 
         .section {
             margin: 20px;
             padding: 20px;
-            background: white;
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            border-radius: 8px;
+            background: #ffffff;
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.1);
+            border-radius: 12px;
         }
 
-        footer {
-            background-color: #333;
-            color: white;
-            text-align: center;
-            padding: 10px;
-            margin-top: 20px;
+        .section h2 {
+            font-size: 1.8rem;
+            color: #2a5885;
+            margin-bottom: 10px;
+        }
+
+        .section ul li {
+            margin: 10px 0;
         }
 
         .btn {
             display: inline-block;
             margin-top: 10px;
-            padding: 10px 15px;
+            padding: 10px 20px;
             color: white;
-            background-color: #4CAF50;
+            background-color: #3a7bd5;
             text-decoration: none;
-            border-radius: 5px;
+            border-radius: 6px;
+            font-weight: bold;
+            transition: all 0.3s ease;
         }
 
         .btn:hover {
-            background-color: #45a049;
+            background-color: #2a5885;
+            transform: scale(1.05);
+        }
+
+        footer {
+            background-color: #2a5885;
+            color: white;
+            text-align: center;
+            padding: 20px;
+            margin-top: 20px;
+            border-top: 5px solid #3a7bd5;
+        }
+
+        footer p {
+            margin: 5px;
+        }
+
+        a {
+            color: #2a5885;
+        }
+
+        a:hover {
+            color: #3a7bd5;
+            text-decoration: underline;
         }
     </style>
 </head>
@@ -82,7 +126,7 @@
 
     <div id="about" class="section">
         <h2>About Me</h2>
-        <p>Hi! I'm Hariksh Mahendra Suryawanshi, a B.Tech student in Computer Science at Newton School of Technology. I'm passionate about solving coding problems, watching cricket, and creating impactful software solutions.</p>
+        <p>Hi! I'm Hariksh Mahendra Suryawanashi, a B.Tech student in Computer Science at Newton School of Technology. I'm passionate about solving coding problems, watching cricket, and creating impactful software solutions.</p>
     </div>
 
     <div id="projects" class="section">
@@ -105,8 +149,10 @@
 
     <div id="contact" class="section">
         <h2>Contact</h2>
-        <p>Email: hariksh.suryawanashi@example.com</p>
+        <p>Email: <a href="mailto:hariksh.suryawanashi@example.com">hariksh.suryawanashi@example.com</a></p>
         <p>GitHub: <a href="https://github.com/Hariksh" target="_blank">github.com/Hariksh</a></p>
+        <p>LinkedIn: <a href="https://www.linkedin.com/in/hariksh-suryawanshi-318a65314/" target="_blank">linkedin.com/in/hariksh-suryawanshi</a></p>
+        <p>Instagram: <a href="https://www.instagram.com/harikshsuryawanshi_/" target="_blank">@harikshsuryawanshi_</a></p>
         <a class="btn" href="mailto:hariksh.suryawanashi@example.com">Email Me</a>
     </div>
 
