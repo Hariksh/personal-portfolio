@@ -23,7 +23,7 @@ header {
 .logo {
     display: flex;
     align-items: center;
-    gap: 10px;
+    gap: 20px;
 }
 
 .logo h1 {
@@ -47,11 +47,11 @@ header {
 nav ul {
     list-style: none;
     display: flex;
-    gap: 25px;
+    gap: 20px;
 }
 
 nav ul li {
-    display: inline;
+    display: inline-block;
 }
 
 nav ul li a {
@@ -76,7 +76,7 @@ main {
 }
 
 .profile img {
-    width: 300px;
+    width: 250px;
     height: 300px;
     border-radius: 50%;
     object-fit: cover;
