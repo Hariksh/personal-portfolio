@@ -1,3 +1,10 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 header {
     display: flex;
     justify-content: space-between;
@@ -53,58 +60,47 @@ nav ul li a:hover {
     color: #4CAF50;
 }
 
-main {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 140px;
-    padding: 60px;
-    gap: 50px;
-}
-
 .personal-container {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 50px;
-    padding: 30px;
+    margin-top: 100px;
+    perspective: 1000px; 
+    height: 500px; 
 }
 
-.personal-content {
-    max-width: 600px;
-    text-align: center;
-    background: #ffffff;
+.flip-card {
+    width: 600px;
+    height: 350px; 
+    position: relative;
+    transform-style: preserve-3d;
+    transition: transform 0.8s;
+    font-size: 20px;
+}
+
+.flip-card:hover {
+    transform: rotateY(180deg);
+}
+
+.flip-card-front,
+.flip-card-back {
+    width: 100%;
+    height: 100%; 
     padding: 30px;
     border-radius: 10px;
     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+    position: absolute;
+    backface-visibility: hidden; 
 }
 
-.personal-content h2 {
-    font-size: 28px;
-    color: #222831;
-    margin-bottom: 10px;
+.flip-card-front {
+    background: #ffffff;
+    text-align: center;
 }
 
-.personal-content h3 {
-    font-size: 22px;
-    color: #4CAF50;
-    margin-top: 20px;
-}
-
-.personal-content p {
-    font-size: 16px;
-    color: #555;
-    line-height: 1.6;
-    margin-top: 10px;
-}
-
-.personal-content ul {
-    list-style: none;
-    padding: 0;
-}
-
-.personal-content ul li {
-    font-size: 16px;
-    color: #666;
-    margin: 5px 0;
+.flip-card-back {
+    background: #4CAF50;
+    color: white;
+    transform: rotateY(180deg);
+    text-align: center;
 }
