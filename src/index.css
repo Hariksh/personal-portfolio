@@ -1,0 +1,200 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600&family=Playfair+Display:wght@400;600;700;800&family=JetBrains+Mono:wght@400;500&display=swap');
+
+:root {
+  /* Colors - Premium Dark Theme */
+  --bg-primary: #0a0a0a;
+  --bg-secondary: #121212;
+  --bg-tertiary: #1a1a1a;
+
+  --accent-color: #D4AF37;
+  /* Gold */
+  --accent-gradient: linear-gradient(135deg, #D4AF37 0%, #F2D06B 100%);
+  --accent-glow: rgba(212, 175, 55, 0.3);
+
+  --text-primary: #f5f5f5;
+  --text-secondary: #a0a0a0;
+  --text-muted: #666666;
+
+  /* Glass/Metal Effects */
+  --bg-glass: rgba(255, 255, 255, 0.03);
+  --bg-glass-strong: rgba(10, 10, 10, 0.85);
+  --border-glass: rgba(255, 255, 255, 0.08);
+  --border-accent: rgba(212, 175, 55, 0.3);
+
+  /* Shadows */
+  --shadow-light: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+  --shadow-medium: 0 20px 40px -10px rgba(0, 0, 0, 0.6);
+  --shadow-glow: 0 0 20px rgba(212, 175, 55, 0.15);
+
+  /* Typography */
+  --font-primary: 'Inter', sans-serif;
+  --font-heading: 'Playfair Display', serif;
+  --font-mono: 'JetBrains Mono', monospace;
+
+  /* Spacing */
+  --section-padding: 120px 0;
+  --container-padding: 0 24px;
+  --border-radius: 4px;
+  /* Sharper, more elegant corners */
+
+  /* Transitions */
+  --transition-normal: 0.4s cubic-bezier(0.16, 1, 0.3, 1);
+
+  /* Z-index layers */
+  --z-header: 1000;
+  --z-modal: 2000;
+  --z-tooltip: 3000;
+}
+
+/* Light Theme Variables (Optional, but keeping structure) */
+[data-theme="light"] {
+  --bg-primary: #f8f8f8;
+  --bg-secondary: #ffffff;
+  --bg-tertiary: #f0f0f0;
+
+  --accent-color: #1a1a1a;
+  /* Black accent for light mode */
+  --accent-gradient: linear-gradient(135deg, #1a1a1a 0%, #333 100%);
+  --accent-glow: rgba(0, 0, 0, 0.1);
+
+  --text-primary: #1a1a1a;
+  --text-secondary: #555555;
+  --text-muted: #888888;
+
+  --bg-glass: rgba(0, 0, 0, 0.03);
+  --bg-glass-strong: rgba(255, 255, 255, 0.9);
+  --border-glass: rgba(0, 0, 0, 0.08);
+  --border-accent: rgba(0, 0, 0, 0.1);
+
+  --shadow-light: 0 10px 30px -10px rgba(0, 0, 0, 0.05);
+  --shadow-medium: 0 20px 40px -10px rgba(0, 0, 0, 0.08);
+  --shadow-glow: 0 0 20px rgba(0, 0, 0, 0.05);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-primary);
+  line-height: 1.7;
+  color: var(--text-primary);
+  background: var(--bg-primary);
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+  transition: background-color var(--transition-normal), color var(--transition-normal);
+}
+
+/* Background Texture */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background:
+    radial-gradient(circle at 15% 50%, rgba(212, 175, 55, 0.03) 0%, transparent 25%),
+    radial-gradient(circle at 85% 30%, rgba(212, 175, 55, 0.03) 0%, transparent 25%);
+  pointer-events: none;
+  z-index: -1;
+}
+
+/* Utility Classes */
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: var(--container-padding);
+}
+
+.section-title {
+  text-align: center;
+  font-family: var(--font-heading);
+  font-size: 48px;
+  font-weight: 700;
+  margin-bottom: 80px;
+  color: var(--text-primary);
+  position: relative;
+  letter-spacing: -0.02em;
+}
+
+.section-title::after {
+  content: '';
+  position: absolute;
+  width: 60px;
+  height: 2px;
+  background: var(--accent-color);
+  bottom: -20px;
+  left: 50%;
+  transform: translateX(-50%);
+  opacity: 0.6;
+}
+
+.btn {
+  display: inline-block;
+  padding: 16px 32px;
+  border-radius: 2px;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 15px;
+  letter-spacing: 0.05em;
+  text-transform: uppercase;
+  transition: all var(--transition-normal);
+  border: 1px solid transparent;
+  cursor: pointer;
+  font-family: var(--font-primary);
+}
+
+.btn.primary {
+  background: var(--accent-color);
+  color: #000;
+  border-color: var(--accent-color);
+}
+
+.btn.primary:hover {
+  background: transparent;
+  color: var(--accent-color);
+  box-shadow: 0 0 20px var(--accent-glow);
+}
+
+.btn.secondary {
+  background: transparent;
+  color: var(--text-primary);
+  border-color: var(--border-glass);
+}
+
+.btn.secondary:hover {
+  border-color: var(--accent-color);
+  color: var(--accent-color);
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--border-glass);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--accent-color);
+}
+
+/* Selection */
+::selection {
+  background: var(--accent-color);
+  color: #000;
+}
