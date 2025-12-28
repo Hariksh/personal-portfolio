@@ -10,6 +10,7 @@ import Contact from './components/Contact';
 import Footer from './components/Footer';
 import Resume from './components/Resume';
 import OpenSource from './components/OpenSource';
+import CustomCursor from './components/CustomCursor';
 
 const Home = () => (
   <>
@@ -29,17 +30,20 @@ const ProjectsPage = () => (
   </div>
 );
 
-const App = () => {
+function App() {
   return (
-    <div className="app">
-      <Navbar />
-      <Routes>
-        <Route path="/" element={<Home />} />
-        <Route path="/projects" element={<ProjectsPage />} />
-        <Route path="/resume" element={<Resume />} />
-      </Routes>
-      <Footer />
-    </div>
+    <>
+      <CustomCursor />
+      <div className="app">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/projects" element={<ProjectsPage />} />
+          <Route path="/resume" element={<Resume />} />
+        </Routes>
+        <Footer />
+      </div>
+    </>
   );
 };
 

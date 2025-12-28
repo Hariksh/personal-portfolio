@@ -156,6 +156,24 @@ const Hero = () => {
           }
         }
       `}</style>
+
+            <motion.div
+                initial={{ opacity: 0, y: 10 }}
+                animate={{ opacity: 1, y: 0 }}
+                transition={{ duration: 1, delay: 1, repeat: Infinity, repeatType: "reverse" }}
+                style={{
+                    position: 'absolute',
+                    bottom: '40px',
+                    left: '50%',
+                    translateX: '-50%',
+                    color: 'var(--text-secondary)',
+                    fontSize: '24px',
+                    cursor: 'pointer'
+                }}
+                onClick={() => document.getElementById('about').scrollIntoView({ behavior: 'smooth' })}
+            >
+                ↓
+            </motion.div>
         </section>
     );
 };
