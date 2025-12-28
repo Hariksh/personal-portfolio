@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import { FaEnvelope, FaLinkedin, FaGithub } from 'react-icons/fa';
 
 const Contact = () => {
     const [formData, setFormData] = useState({
@@ -68,18 +69,51 @@ const Contact = () => {
                             I'm always open to discussing new opportunities, collaborations, or just having a chat about technology.
                         </p>
                         <div className="contact-methods" style={{ display: 'flex', flexDirection: 'column', gap: '24px' }}>
-                            <div className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px' }}>
-                                <span className="icon" style={{ fontSize: '20px', color: 'var(--accent-color)' }}>📧</span>
-                                <span style={{ color: 'var(--text-secondary)' }}>Email me for opportunities</span>
-                            </div>
-                            <div className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px' }}>
-                                <span className="icon" style={{ fontSize: '20px', color: 'var(--accent-color)' }}>💼</span>
+                            <a href="mailto:hariksh.suryawanshi@adypu.edu.in" className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px', textDecoration: 'none', color: 'inherit' }}>
+                                <span className="icon" style={{
+                                    fontSize: '20px',
+                                    color: 'var(--accent-color)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '40px',
+                                    height: '40px',
+                                    borderRadius: '50%',
+                                    background: 'var(--bg-tertiary)',
+                                    border: '1px solid var(--border-glass)'
+                                }}><FaEnvelope /></span>
+                                <span style={{ color: 'var(--text-secondary)' }}>hariksh.suryawanshi@adypu.edu.in</span>
+                            </a>
+                            <a href="https://www.linkedin.com/in/hariksh-suryawanshi-318a65314/" target="_blank" rel="noopener noreferrer" className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px', textDecoration: 'none', color: 'inherit' }}>
+                                <span className="icon" style={{
+                                    fontSize: '20px',
+                                    color: 'var(--accent-color)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '40px',
+                                    height: '40px',
+                                    borderRadius: '50%',
+                                    background: 'var(--bg-tertiary)',
+                                    border: '1px solid var(--border-glass)'
+                                }}><FaLinkedin /></span>
                                 <span style={{ color: 'var(--text-secondary)' }}>Connect on LinkedIn</span>
-                            </div>
-                            <div className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px' }}>
-                                <span className="icon" style={{ fontSize: '20px', color: 'var(--accent-color)' }}>🐙</span>
+                            </a>
+                            <a href="https://github.com/Hariksh" target="_blank" rel="noopener noreferrer" className="contact-method" style={{ display: 'flex', alignItems: 'center', gap: '20px', fontSize: '16px', textDecoration: 'none', color: 'inherit' }}>
+                                <span className="icon" style={{
+                                    fontSize: '20px',
+                                    color: 'var(--accent-color)',
+                                    display: 'flex',
+                                    alignItems: 'center',
+                                    justifyContent: 'center',
+                                    width: '40px',
+                                    height: '40px',
+                                    borderRadius: '50%',
+                                    background: 'var(--bg-tertiary)',
+                                    border: '1px solid var(--border-glass)'
+                                }}><FaGithub /></span>
                                 <span style={{ color: 'var(--text-secondary)' }}>Check out my GitHub</span>
-                            </div>
+                            </a>
                         </div>
                     </motion.div>
 
@@ -175,7 +209,7 @@ const Contact = () => {
                             style={{
                                 width: '100%',
                                 background: status === 'success' ? '#4CAF50' : 'var(--accent-color)',
-                                color: status === 'success' ? 'white' : '#000',
+                                color: status === 'success' ? 'white' : 'var(--btn-text-color)',
                                 borderColor: status === 'success' ? '#4CAF50' : 'var(--accent-color)'
                             }}
                         >

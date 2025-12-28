@@ -1,7 +1,6 @@
 import React from 'react';
 import { motion } from 'framer-motion';
-import { FaGithub, FaCodeBranch, FaStar, FaUsers } from 'react-icons/fa';
-import { SiHacktoberfest } from 'react-icons/si';
+import { FaGithub, FaCodeBranch, FaStar, FaUsers, FaCalendarAlt } from 'react-icons/fa';
 
 const OpenSource = () => {
     const contributions = [
@@ -16,7 +15,7 @@ const OpenSource = () => {
             title: 'Hacktoberfest 2024',
             description: 'Actively participated in Hacktoberfest, contributing to multiple open-source repositories and promoting open-source culture.',
             role: 'Participant',
-            icon: <SiHacktoberfest />,
+            icon: <FaCalendarAlt />,
             link: 'https://hacktoberfest.com/'
         }
     ];

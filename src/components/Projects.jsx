@@ -1,69 +1,63 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { FaAmbulance, FaWallet, FaGraduationCap, FaShoppingCart, FaUniversity } from 'react-icons/fa';
 
 const Projects = () => {
     const projects = [
         {
-            title: 'ShopEasy - E-commerce Platform',
-            description: 'A full-featured e-commerce platform with product catalog, shopping cart, category filtering, and modern UI. Features Spring Collection 2025 showcase and newsletter subscription functionality.',
-            tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Shopping Cart'],
+            title: 'Ambulance Booking System',
+            description: 'Real-time emergency response platform featuring live tracking, driver assignment, and secure JWT authentication. Built with a scalable microservices architecture and deployed on Render.',
+            tech: ['Next.js', 'Node.js', 'MongoDB', 'Socket.io', 'Render'],
             links: {
-                demo: 'https://ecommerce-website-theta-olive.vercel.app/',
-                github: 'https://github.com/Hariksh/ecommerce_website'
+                demo: 'https://ambulance-booking-sooty.vercel.app/',
+                github: 'https://github.com/Hariksh/Ambulance_Booking'
             },
-            icon: '🛒'
+            gradient: 'linear-gradient(135deg, #FF9966 0%, #FF5E62 100%)',
+            icon: <FaAmbulance />
         },
         {
-            title: 'NSAT - Educational Platform',
-            description: 'A comprehensive educational platform for engineering aspirants featuring exam preparation materials for JEE, NEET, VITEE, UGEE with study materials, test series, and subject-wise content organization.',
-            tech: ['HTML5', 'CSS3', 'JavaScript', 'Educational Content', 'Responsive UI'],
+            title: 'Expense Tracker',
+            description: 'Full-stack mobile application for financial management with secure auth, categorization, and detailed analytics. Uses Prisma ORM with MySQL for robust data handling.',
+            tech: ['React Native', 'Node.js', 'MySQL', 'Prisma', 'Expo'],
             links: {
-                demo: 'https://super-zabaione-95f90e.netlify.app/',
-                github: 'https://github.com/Hariksh/NSAT-2.0'
+                demo: 'https://drive.google.com/file/d/12FrK3MzIxHtl2s1XPWdjuuOfunEPOYLe/view?usp=sharing',
+                github: 'https://github.com/Hariksh/Expense_tracker'
             },
-            icon: '📚'
+            gradient: 'linear-gradient(135deg, #43cea2 0%, #185a9d 100%)',
+            icon: <FaWallet />
         },
         {
             title: 'Personalized Academic Tracker',
-            description: 'A smart, student-centric web app that helps track grades, monitor attendance, and stay organized with timely reminders. Features JWT-based authentication, progress dashboard with charts, and PWA capabilities.',
-            tech: ['React', 'Node.js', 'MongoDB', 'JWT Auth', 'PWA', 'TailwindCSS'],
+            description: 'A smart, student-centric web app that helps track grades, monitor attendance, and stay organized. Features JWT-based authentication and PWA capabilities.',
+            tech: ['React', 'Node.js', 'MongoDB', 'JWT', 'PWA'],
             links: {
                 demo: 'https://personalized-academic-tracker-rho.vercel.app/',
                 github: 'https://github.com/Hariksh/Personalized-Academic-Tracker'
             },
-            icon: '📊'
+            gradient: 'linear-gradient(135deg, #5EFCE8 0%, #736EFE 100%)',
+            icon: <FaGraduationCap />
         },
         {
-            title: 'Personal Portfolio Website',
-            description: 'A modern, responsive portfolio website built with HTML5, CSS3, and JavaScript. Features smooth animations, mobile-first design, interactive elements, and comprehensive sections showcasing skills and projects.',
-            tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design', 'Animations'],
+            title: 'ShopEasy - E-commerce',
+            description: 'Feature-rich e-commerce platform with product catalog, cart management, and category filtering. Includes newsletter subscription and modern responsive design.',
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'Responsive Design'],
             links: {
-                demo: '/',
-                github: 'https://github.com/Hariksh'
+                demo: 'https://ecommerce-website-theta-olive.vercel.app/',
+                github: 'https://github.com/Hariksh/ecommerce_website'
             },
-            icon: '🌐'
+            gradient: 'linear-gradient(135deg, #FC466B 0%, #3F5EFB 100%)',
+            icon: <FaShoppingCart />
         },
         {
-            title: 'Algorithm Visualizer',
-            description: 'An interactive web application to visualize sorting and searching algorithms, helping students understand how different algorithms work step by step with real-time animations and explanations.',
-            tech: ['JavaScript', 'Canvas API', 'CSS Animations', 'Data Structures'],
+            title: 'NSAT - Education Platform',
+            description: 'Comprehensive exam preparation platform for engineering aspirants with study materials, test series, and subject-wise content organization.',
+            tech: ['HTML5', 'CSS3', 'JavaScript', 'Educational Tech'],
             links: {
-                demo: '#',
-                github: 'https://github.com/Hariksh'
+                demo: 'https://super-zabaione-95f90e.netlify.app/',
+                github: 'https://github.com/Hariksh/NSAT-2.0'
             },
-            icon: '🔍',
-            status: 'In Development'
-        },
-        {
-            title: 'Full-Stack Web Application',
-            description: 'Planning to build a comprehensive full-stack application with modern technologies, user authentication, real-time features, and scalable architecture to showcase advanced development skills.',
-            tech: ['React', 'Node.js', 'MongoDB', 'Express.js', 'Socket.io'],
-            links: {
-                demo: '#',
-                github: 'https://github.com/Hariksh'
-            },
-            icon: '🚀',
-            status: 'Planning'
+            gradient: 'linear-gradient(135deg, #FDBB2D 0%, #3A1C71 100%)',
+            icon: <FaUniversity />
         }
     ];
 
@@ -101,54 +95,54 @@ const Projects = () => {
                             style={{
                                 background: 'var(--bg-secondary)',
                                 border: '1px solid var(--border-glass)',
-                                borderRadius: '2px',
+                                borderRadius: '12px',
                                 overflow: 'hidden',
-                                transition: 'all 0.4s ease',
+                                transition: 'all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275)',
                                 position: 'relative',
                                 display: 'flex',
-                                flexDirection: 'column'
+                                flexDirection: 'column',
+                                height: '100%'
                             }}
                             whileHover={{
                                 y: -10,
-                                boxShadow: 'var(--shadow-medium)',
+                                boxShadow: '0 20px 40px -10px rgba(0,0,0,0.5)',
                                 borderColor: 'var(--border-accent)'
                             }}
                         >
                             <div className="project-image" style={{
-                                height: '180px',
-                                background: 'var(--bg-tertiary)',
+                                height: '220px',
+                                background: project.gradient,
                                 display: 'flex',
                                 alignItems: 'center',
                                 justifyContent: 'center',
-                                fontSize: '48px',
-                                color: 'var(--accent-color)',
-                                borderBottom: '1px solid var(--border-glass)'
+                                position: 'relative',
+                                overflow: 'hidden'
                             }}>
-                                {project.icon}
+                                <motion.div
+                                    style={{
+                                        fontSize: '80px',
+                                        color: 'rgba(255,255,255,0.9)',
+                                        filter: 'drop-shadow(0 0 20px rgba(0,0,0,0.2))'
+                                    }}
+                                    whileHover={{ scale: 1.1, rotate: [0, -10, 10, -10, 0] }}
+                                    transition={{ duration: 0.5 }}
+                                >
+                                    {project.icon}
+                                </motion.div>
+                                <div style={{
+                                    position: 'absolute',
+                                    bottom: 0,
+                                    left: 0,
+                                    right: 0,
+                                    height: '60px',
+                                    background: 'linear-gradient(to top, var(--bg-secondary), transparent)'
+                                }}></div>
                             </div>
 
                             <div className="project-content" style={{ padding: '32px', flex: 1, display: 'flex', flexDirection: 'column' }}>
-                                {project.status && (
-                                    <div className="coming-soon" style={{
-                                        position: 'absolute',
-                                        top: '16px',
-                                        right: '16px',
-                                        background: 'var(--accent-color)',
-                                        color: '#000',
-                                        padding: '4px 12px',
-                                        borderRadius: '100px',
-                                        fontSize: '11px',
-                                        fontWeight: 700,
-                                        textTransform: 'uppercase',
-                                        letterSpacing: '0.05em'
-                                    }}>
-                                        {project.status}
-                                    </div>
-                                )}
-
                                 <h3 className="project-title" style={{
-                                    fontSize: '22px',
-                                    fontWeight: 600,
+                                    fontSize: '24px',
+                                    fontWeight: 700,
                                     color: 'var(--text-primary)',
                                     marginBottom: '16px',
                                     fontFamily: 'var(--font-heading)',
@@ -175,12 +169,15 @@ const Projects = () => {
                                 }}>
                                     {project.tech.map((tech) => (
                                         <span key={tech} className="tech-tag" style={{
-                                            color: 'var(--text-muted)',
+                                            color: 'var(--accent-color)',
                                             fontSize: '12px',
-                                            fontWeight: 500,
-                                            fontFamily: 'var(--font-mono)'
+                                            fontWeight: 600,
+                                            fontFamily: 'var(--font-mono)',
+                                            background: 'rgba(212, 175, 55, 0.1)',
+                                            padding: '4px 10px',
+                                            borderRadius: '4px'
                                         }}>
-                                            #{tech}
+                                            {tech}
                                         </span>
                                     ))}
                                 </div>
@@ -188,29 +185,32 @@ const Projects = () => {
                                 <div className="project-links" style={{ display: 'flex', gap: '16px', marginTop: 'auto' }}>
                                     <a
                                         href={project.links.demo}
-                                        target={project.links.demo.startsWith('http') ? "_blank" : "_self"}
+                                        target="_blank"
                                         rel="noopener noreferrer"
                                         className="project-link primary"
                                         style={{
                                             padding: '12px 24px',
-                                            borderRadius: '2px',
+                                            borderRadius: '8px',
                                             textDecoration: 'none',
-                                            fontWeight: 500,
+                                            fontWeight: 600,
                                             fontSize: '14px',
                                             transition: 'all 0.3s ease',
-                                            background: 'var(--text-primary)',
-                                            color: 'var(--bg-primary)',
+                                            background: 'var(--accent-gradient)',
+                                            color: 'var(--btn-text-color)',
                                             textAlign: 'center',
-                                            flex: 1
+                                            flex: 1,
+                                            boxShadow: '0 4px 15px rgba(212, 175, 55, 0.3)'
                                         }}
                                         onMouseEnter={(e) => {
-                                            e.target.style.background = 'var(--accent-color)';
+                                            e.target.style.transform = 'translateY(-2px)';
+                                            e.target.style.boxShadow = '0 8px 25px rgba(212, 175, 55, 0.4)';
                                         }}
                                         onMouseLeave={(e) => {
-                                            e.target.style.background = 'var(--text-primary)';
+                                            e.target.style.transform = 'translateY(0)';
+                                            e.target.style.boxShadow = '0 4px 15px rgba(212, 175, 55, 0.3)';
                                         }}
                                     >
-                                        {project.status ? 'Details' : 'Live Demo'}
+                                        Live Demo
                                     </a>
                                     <a
                                         href={project.links.github}
@@ -219,9 +219,9 @@ const Projects = () => {
                                         className="project-link secondary"
                                         style={{
                                             padding: '12px 24px',
-                                            borderRadius: '2px',
+                                            borderRadius: '8px',
                                             textDecoration: 'none',
-                                            fontWeight: 500,
+                                            fontWeight: 600,
                                             fontSize: '14px',
                                             transition: 'all 0.3s ease',
                                             background: 'transparent',
@@ -232,9 +232,11 @@ const Projects = () => {
                                         }}
                                         onMouseEnter={(e) => {
                                             e.target.style.borderColor = 'var(--text-primary)';
+                                            e.target.style.background = 'rgba(255,255,255,0.05)';
                                         }}
                                         onMouseLeave={(e) => {
                                             e.target.style.borderColor = 'var(--border-glass)';
+                                            e.target.style.background = 'transparent';
                                         }}
                                     >
                                         GitHub
