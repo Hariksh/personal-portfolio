@@ -90,7 +90,7 @@ const OpenSource = () => {
                 fontFamily: "var(--font-heading)",
               }}
             >
-              603+
+              650+
             </span>
             <span
               style={{
