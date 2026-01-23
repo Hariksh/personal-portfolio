@@ -75,7 +75,7 @@ const Education = () => {
                                 Newton School of Technology (ADYPU), Pune
                             </h4>
                             <p style={{ color: 'var(--text-secondary)', lineHeight: 1.8 }}>
-                                Grade: 7.95/10.0
+                                Grade: 8.45/10.0
                             </p>
                         </div>
                     </motion.div>
