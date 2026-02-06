@@ -101,7 +101,7 @@ const Resume = () => {
             style={{
               maxWidth: "850px",
               margin: "0 auto",
-              background: "#fff", // Keep white for printability/readability standard
+              background: "#fff",
               color: "#333",
               borderRadius: "4px",
               boxShadow: "var(--shadow-medium)",
@@ -110,7 +110,6 @@ const Resume = () => {
               zIndex: 10,
             }}
           >
-            {/* Header */}
             <div
               className="resume-header"
               style={{
@@ -237,7 +236,6 @@ const Resume = () => {
               </div>
             </div>
 
-            {/* Professional Summary */}
             <div
               className="resume-section"
               style={{ padding: "30px 40px", borderBottom: "1px solid #eee" }}
@@ -323,7 +321,7 @@ const Resume = () => {
                   }}
                 >
                   <span>Newton School of Technology (ADYPU), Pune</span>
-                  <span>Grade: 7.95/10.0</span>
+                  <span>Grade: 8.11/10.0</span>
                 </div>
               </div>
               <div
@@ -388,102 +386,6 @@ const Resume = () => {
               </div>
             </div>
 
-            {/* Internships */}
-            <div
-              className="resume-section"
-              style={{ padding: "20px 40px", borderBottom: "1px solid #eee" }}
-            >
-              <h3
-                style={{
-                  fontSize: "18px",
-                  color: "#1a1a1a",
-                  marginBottom: "15px",
-                  textTransform: "uppercase",
-                  letterSpacing: "0.05em",
-                  borderBottom: "2px solid #f0f0f0",
-                  paddingBottom: "5px",
-                  fontWeight: 700,
-                }}
-              >
-                Internships
-              </h3>
-              <div className="experience-item">
-                <div
-                  style={{
-                    display: "flex",
-                    justifyContent: "space-between",
-                    marginBottom: "2px",
-                  }}
-                >
-                  <strong style={{ fontSize: "15px" }}>
-                    Frontend Developer
-                  </strong>
-                  <span style={{ fontSize: "14px", color: "#666" }}>
-                    June 2025 - July 2025
-                  </span>
-                </div>
-                <div
-                  style={{
-                    fontSize: "14px",
-                    color: "#444",
-                    fontStyle: "italic",
-                    marginBottom: "8px",
-                  }}
-                >
-                  Newton School of Technology, Pune
-                </div>
-                <ul
-                  style={{
-                    margin: "0",
-                    paddingLeft: "18px",
-                    fontSize: "14px",
-                    color: "#333",
-                    lineHeight: "1.5",
-                  }}
-                >
-                  <li>
-                    Built an end-to-end full-stack{" "}
-                    <strong>Academic Tracker</strong> with secure{" "}
-                    <strong>JWT authentication</strong>, academic data
-                    recording, progress monitoring, and interactive dashboards
-                    using <strong>React, TailwindCSS,</strong> and{" "}
-                    <strong>Recharts</strong> in a mobile-first UI.
-                  </li>
-                  <li>
-                    Designed a{" "}
-                    <strong>modular and scalable RESTful backend</strong>{" "}
-                    using <strong>Node.js, Express</strong>, and optimized{" "}
-                    <strong>MongoDB</strong> data models, delivering{" "}
-                    <strong>efficient, reliable</strong>, and{" "}
-                    <strong>consistent</strong> API performance across all
-                    academic modules.
-                  </li>
-                  <li>
-                    Deployed the application with <strong>Vercel</strong>{" "}
-                    (frontend) and <strong>Railway</strong> (backend),
-                    integrated <strong>PWA capabilities</strong>, and ensured{" "}
-                    <strong>high-performance, stable</strong>, and{" "}
-                    <strong>multi-device</strong> access for users. (
-                    <a
-                      href="https://github.com/Hariksh/Personalized-Academic-Tracker"
-                      style={{ color: "#0056b3" }}
-                    >
-                      Github
-                    </a>
-                    ) (
-                    <a
-                      href="https://personalized-academic-tracker-rho.vercel.app/"
-                      style={{ color: "#0056b3" }}
-                    >
-                      Demo
-                    </a>
-                    )
-                  </li>
-                </ul>
-              </div>
-            </div>
-
-            {/* Projects */}
             <div
               className="resume-section"
               style={{ padding: "20px 40px", borderBottom: "1px solid #eee" }}
