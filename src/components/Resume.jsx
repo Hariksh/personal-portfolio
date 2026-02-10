@@ -321,7 +321,7 @@ const Resume = () => {
                   }}
                 >
                   <span>Newton School of Technology (ADYPU), Pune</span>
-                  <span>Grade: 8.11/10.0</span>
+                  <span>Grade: 8.16/10.0</span>
                 </div>
               </div>
               <div
